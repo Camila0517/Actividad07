@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hyori - Feel Good Food</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        <!--Promo-->
+        <div class="top-promo text-center text-white py-1 d-none d-md-block">
+            Free Shipping On Orders Over $100
+        </div>
+        <!--Encabezado-->
+        <nav>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-4 col-lg-3 d-flex justify-content-start align-items-center">
+                        <a href="#" class="btn btn-link p-0 border-0 logo-link">
+                            <img src="images/hyori_Logo.png" alt="hyori" class="logo-img">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-5 d-none d-md-block">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search product..."
+                                aria-label="Search" />
+                            <button class="search btn" type="submit">Search</button>
+                        </form>
+                    </div>
+
+                    <div class="col-8 col-lg-4 d-flex justify-content-end align-items-center">
+                        <i class="bi bi-search d-block d-md-none fs-4 me-3"></i>
+
+                        <i class="bi bi-person me-3 fs-4 btn btn-link text-dark p-0" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasUser" aria-controls="offcanvasUser"></i>
+
+                        <i class="bi bi-files me-3 d-none d-xl-inline fs-4 btn btn-link text-dark p-0"></i>
+
+                        <i class="bi bi-bag fs-4 btn btn-link text-dark p-0"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Menu-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+            <div class="container-fluid justify-content-center">
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 nav-center">
+
+                        <li class="nav-item dropdown me-4 d-lg-block">
+                            <a class="nav-link dropdown-toggle categories-bg text-light rounded px-3 fw-bold" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-list me-2"></i> CATEGORIES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Vegetales Frescos</a></li>
+                                <li><a class="dropdown-item" href="#">Frutas Orgánicas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Carnes y Pescados</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HOME
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CATALOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#catalogo-simple">Ver Todo</a></li>
+                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                COLLECTIONS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BLOG
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Galeria-->
+        <section class="galeria mb-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/watermelon.png" class="d-block w-70" alt="Sandía">
+                        <div class="carousel-caption text-start custom-caption">
+                            <p class="text-white fs-5 mb-2">Sale up to 30% all products</p>
+                            <h1 class="display-3 fw-bolder mb-4 text-white">Feel Good Food</h1>
+                            <button class="btn btn-light btn-lg text-success fw-bold shop-now-btn">Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/fruit.png" class="d-block w-100" alt="Frutas Variadas">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--Destacado-->
+        <section class="my-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div
+                                class="card-body bg-pink-light d-flex flex-column align-items-center justify-content-center text-center">
+                                <img class="h-20 w-50 mb-3" src="images/meat.png" alt="Carne">
+                                <h5 class="card-title text-center">Super Healthy</h5>
+                                <a href="#" class="btn btn-success mt-auto">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div
+                                class="card-body bg-yellow-light d-flex flex-column align-items-center justify-content-center text-center">
+                                <img class="h-20 w-50 mb-3" src="images/fruit.png" alt="Fruta">
+                                <h5 class="card-title text-center">Fresh Fruit</h5>
+                                <a href="#" class="btn btn-success mt-auto">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div
+                                class="card-body bg-green-light d-flex flex-column align-items-center justify-content-center text-center">
+                                <img class="h-20 w-50 mb-3" src="images/veggies.png" alt="Verduras">
+                                <h5 class="card-title text-center">Fresh Vegetables</h5>
+                                <a href="#" class="btn btn-success mt-auto">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+                            <div
+                                class="card-body bg-blue-light d-flex flex-column align-items-center justify-content-center text-center">
+                                <img class="h-20 w-50 mb-3" src="images/organic.png" alt="Orgánico">
+                                <h5 class="card-title text-center">100% organic</h5>
+                                <a href="#" class="btn btn-success mt-auto">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Delivery-->
+        <section class="py-5 delivery-bg bg-blue-light">
+            <div class="container">
+                <div class="row text-center g-4">
+
+                    <div class="col-12 col-md-4">
+                        <div class="card delivery-card h-100 p-4">
+                            <i class="bi bi-basket3-fill text-success mb-3 fs-1"></i>
+                            <h5 class="fw-bold">Choose Fruits</h5>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card delivery-card h-100 p-4">
+                            <i class="bi bi-pin-map-fill text-success mb-3 fs-1"></i>
+                            <h5 class="fw-bold">Place Your Address</h5>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card delivery-card h-100 p-4">
+                            <i class="bi bi-truck-flatbed text-success mb-3 fs-1"></i>
+                            <h5 class="fw-bold">Payment & Delivery</h5>
+                            <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Catalogo-->
+        <section>
+            <div class="text-center">
+                <h5 class="text-success">Our Products</h5>
+                <h2 class="text-success">This is the heading</h2>
+                <h6>Latest products & New Collectión</h6>
+
+                <nav>
+                    <ul class="d-flex justify-content-center list-unstyled">
+                        <li class="px-3">
+                            <i class="bi bi-basket"></i>
+                            <br>
+                            Fruits
+                        </li>
+                        <li class="px-3">
+                            <i class="bi bi-egg-fried"></i>
+                            <br>
+                            Butter and eggs
+                        </li>
+                        <li class="px-3">
+                            <i class="bi bi-asterisk"></i>
+                            <br>
+                            Meats
+                        </li>
+                        <li class="px-3">
+                            <i class="bi bi-droplet-half"></i>
+                            <br>
+                            Milk & Cream
+                        </li>
+                        <li class="px-3">
+                            <i class="bi bi-flower2"></i>
+                            <br>
+                            Vegetables
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="Catalogo">
+            <div class="container">
+                <h2 class="text-center pb-5">Nuestras Platillos</h2>
+                <div class="row">
+                    <div class="col-md text-center h-100  ">
+                        <img src="images/apple.png" alt="Manzana"">
+                        <h4 class="pt-4">Manzanas</h4>
+                        <p class="precio text-center text-success pt-3">$35MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100  ">
+                        <img src="images/banana.png" alt="Platano">
+                        <h4 class="pt-4">Platano</h4>
+                        <p class="precio text-center text-success pt-3">$30 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100 ">
+                        <img src="images/kiwi.png" alt="Kiwi">
+                        <h4 class="pt-4">Kiwi</h4>
+                        <p class="precio text-center text-success pt-3">$80 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100 ">
+                        <img src="images/sandia.png" alt="">
+                        <h4 class="pt-4">Sandia</h4
+                        <p class="precio text-center text-success pt-3">$65 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100">
+                        <img src="images/brocoli.png" alt="">
+                        <h4 class="pt-4">Brocoli</h4>
+                        <p class="precio text-center text-success pt-3">$50 MXN</p>
+                    </div>
+
+                    <div class="row pt-5">
+                    <div class="col-md text-center h-100  ">
+                        <img src="images/avocado.png" alt="">
+                        <h4 class="pt-4">Aguacate</h4>
+                        <p class="precio text-center text-success pt-3">$90 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100 ">
+                        <img src="images/cherry_tomatoes.png" alt="">
+                        <h4 class="pt-4">Tomates Cherry</h4>
+                        <p class="precio text-center text-success pt-3">$75 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100 ">
+                        <img src="images/carrot.png" alt="">
+                        <h4 class="pt-4">Zanahoria</h4>
+                        <p class="precio text-center text-success pt-3">$40 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100  ">
+                        <img src="images/milk.png" alt="">
+                        <h4 class="pt-4">Leche</h4>
+                        <p class="precio text-center text-success pt-3">$30 MXN</p>
+                    </div>
+
+                    <div class="col-md text-center h-100">
+                        <img src="images/cereal.png" alt="">
+                        <h4 class="pt-4">Cereal</h4>
+                        <p class="precio text-center text-success pt-3">$60 MXN</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="bg-dark text-white pt-5 pb-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <img src="images/hyori_Logo.png" alt="Hyori Logo Blanco" class="footer-logo mb-3">
+                        <p class="small">Tu fuente confiable de productos frescos y orgánicos.</p>
+                        <p class="small mb-1"><i class="bi bi-geo-alt-fill me-2 text-success"></i> 123 Calle Principal,
+                            Ciudad Hyori</p>
+                        <p class="small mb-1"><i class="bi bi-phone-fill me-2 text-success"></i> +52 55 1234 5678</p>
+                        <p class="small"><i class="bi bi-envelope-fill me-2 text-success"></i> contacto@hyori.com</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-bold mb-3 text-success">Enlaces</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none small">Acerca de Nosotros</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none small">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-bold mb-3 text-success">Productos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none small">Frutas</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none small">Vegetales</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="fw-bold mb-3 text-success">Síguenos</h5>
+                        <div class="d-flex mb-3">
+                            <a href="#" class="btn btn-outline-success rounded-circle me-2"><i
+                                    class="bi bi-facebook fs-5"></i></a>
+                            <a href="#" class="btn btn-outline-success rounded-circle me-2"><i
+                                    class="bi bi-twitter-x fs-5"></i></a>
+                            <a href="#" class="btn btn-outline-success rounded-circle"><i
+                                    class="bi bi-instagram fs-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4 border-success">
+                <div class="text-center small text-white-50">
+                    &copy; 2024 Hyori. Todos los derechos reservados.
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous">
+        </script>
+
+    </body>
+
+</html>

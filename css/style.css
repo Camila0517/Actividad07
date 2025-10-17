@@ -1,32 +1,28 @@
 :root {
     --hyori-green: #14781A;
-    --hyori-light-green: #E8F5E9; /* Tono verde claro para fondos de promoción */
-    --hyori-yellow: #FFEFC6; /* Tono amarillo claro para el fondo de promoción */
+    --hyori-light-green: #E8F5E9;
+    --hyori-yellow: #FFEFC6;
 }
 
-/* 1. Menú Superior y Encabezado */
 .top-promo {
     background-color: var(--hyori-green);
     font-size: 0.8rem;
 }
 
 .logo-link img {
-    width: 150px; /* Tamaño del logo en el encabezado */
+    width: 150px;
     height: auto;
 }
 
-/* Centralización del Menú de Navegación Principal */
 .nav-center {
     display: flex;
     justify-content: center;
 }
 
-/* Estilo del Dropdown de Categorías (Verde) */
 .categories-bg {
     background-color: var(--hyori-green) !important;
 }
 
-/* Estilo del Botón de Búsqueda */
 .d-flex .search {
     background-color: var(--hyori-green);
     color: white;
@@ -38,13 +34,11 @@
     border-color: #0c4d0f;
 }
 
-/* 2. Galería (Carrusel) */
 .custom-caption {
     left: 10%;
     bottom: auto;
     top: 50%;
     transform: translateY(-50%);
-    /* Aseguramos que el texto sea blanco */
     color: white; 
 }
 
@@ -56,7 +50,6 @@
     padding: 10px 25px;
 }
 
-/* 3. Zona de Promociones */
 .promo-card {
     border: none;
     overflow: hidden; 
@@ -75,7 +68,6 @@
     left: 10%;
 }
 
-/* Estilos de Fondo para las promociones que tienen color */
 .promo-yellow {
     background-color: var(--hyori-yellow); 
     padding: 15px;
@@ -83,8 +75,8 @@
     top: 20%;
     right: 10%;
     left: auto;
-    width: 50%; /* Limita el ancho del contenido de texto */
-    color: #333; /* Color de texto oscuro si el fondo es claro */
+    width: 50%;
+    color: #333;
 }
 
 .promo-light-green {
@@ -97,13 +89,10 @@
     color: #333;
 }
 
-/* 4. Sección de Proceso (Delivery) */
 .delivery-bg {
-    /* Asume una imagen de fondo (debe estar en la ruta images/) */
     background: url('../images/delivery_bg.jpg') no-repeat center center/cover;
     position: relative;
     z-index: 1;
-    /* Oscurecer el fondo para que el texto blanco/tarjetas resalten si es necesario */
 }
 
 .delivery-card {
@@ -113,7 +102,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* 5. Catálogo Simple */
 .product-tabs .nav-link {
     color: #6c757d;
     border: none;
@@ -141,10 +129,9 @@
     object-fit: contain;
 }
 
-/* Ocultar acciones por defecto y mostrarlas al pasar el ratón (desktop) */
 .product-actions {
     position: absolute;
-    bottom: -40px; /* Posicionado fuera de la vista */
+    bottom: -40px;
     left: 0;
     right: 0;
     padding: 5px 0;
@@ -155,7 +142,7 @@
 }
 
 .product-card:hover .product-actions {
-    bottom: 0; /* Desliza hacia arriba al hacer hover */
+    bottom: 0;
 }
 
 .product-actions i {
@@ -164,41 +151,37 @@
     padding: 0 8px;
 }
 
-/* 6. Pie de Página */
 .footer-logo {
     width: 120px;
     height: auto;
 }
 
-/* Ejemplo de cómo definir las clases de fondo claro en tu CSS */
 .bg-pink-light {
-    background-color: #fce4ec !important; /* Un rosa muy claro */
+    background-color: #fce4ec !important;
 }
 
 .bg-yellow-light {
-    background-color: #fffde7 !important; /* Un amarillo muy claro */
+    background-color: #fffde7 !important;
 }
 
 .bg-green-light {
-    background-color: #e8f5e9 !important; /* Un verde muy claro */
+    background-color: #e8f5e9 !important;
 }
 
 .bg-blue-light {
-    background-color: #e3f2fd !important; /* Un azul muy claro */
+    background-color: #e3f2fd !important;
 }
 
-/* Media Queries para Responsividad Móvil */
 @media (max-width: 991.98px) {
     .custom-caption {
         top: 65%;
     }
     .promo-yellow {
-        width: 80%; /* Más ancho en tablets */
+        width: 80%;
     }
 }
 
 @media (max-width: 575.98px) {
-    /* Ocultamos elementos para limpiar la vista móvil */
     .d-none.d-xl-inline, .d-none.d-sm-block {
         display: none !important; 
     }
@@ -219,12 +202,11 @@
         font-size: 0.8rem;
     }
     
-    /* En móvil, las acciones del producto deben ser visibles al pie de la tarjeta */
     .product-actions {
         position: static;
         opacity: 1;
         transform: none;
-        background: #f8f9fa; /* Color claro para la base de la tarjeta */
+        background: #f8f9fa;
         border-top: 1px solid #eee;
     }
     .product-actions i {
